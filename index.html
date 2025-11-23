@@ -145,6 +145,202 @@
             background-color: #333;
             color: white;
             text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        /* Simple Responsive Adjustment */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+            nav ul {
+                padding-top: 10px;
+            }
+            nav ul li {
+                margin: 0 5px;
+            }
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>SalJu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Taste the Freshness of SalJu</h2>
+            <p>Your daily dose of healthy, homemade vegetable salads and fresh juices. Made with love, delivered to you.</p>
+            
+            <img src="1000008681.jpg" alt="Salad Sayur dan Jus Buah Segar" class="product-image">
+            
+            <a href="#contact" class="cta-button">Order Now!</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h3>Our Delicious Offerings</h3>
+            
+            <div class="product-grid">
+                
+                <div class="product-item">
+                    <h4>Vegetable Salad</h4>
+                    <p>Crisp, hand-picked greens with a variety of seasonal vegetables and our signature dressing. The perfect light meal.</p>
+                </div>
+                
+                <div class="product-item">
+                    <h4>Fresh Homemade Juice</h4>
+                    <p>Natural, preservative-free juices pressed daily from the freshest fruits and vegetables. Boost your day!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 SalJu. Freshness delivered daily.</p>
+            <p>Contact us for orders via WhatsApp: <a href="tel:+628818008271" style="color: white; text-decoration: none;">+62 881-800-8271</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d1ffd7;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            background-color: #4CAF50; /* Medium Green */
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FF9800; /* Orange/Accent Color */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e68900;
+        }
+        
+        /* New Image Styling */
+        .product-image {
+            max-width: 90%; /* Keeps the image responsive on all screen sizes */
+            height: auto;
+            margin: 20px auto;
+            display: block; /* Centers the image */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Products Section Styling */
+        .products {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .products h3 {
+            font-size: 2em;
+            color: #1a7f37;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-item h4 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
             padding:
         }
 
